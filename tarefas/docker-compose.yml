@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   postgres:
-    container_name: postgres-compose
+    container_name: postgres-task
     image: postgres
     volumes:
       - ./data/db:/var/lib/postgresql/data
@@ -14,10 +14,10 @@ services:
     ports:
       - "5400:5432"
     networks:
-      - postgres-compose-network
+      - postgres-task-network
   
   pgadmin:
-    container_name: pgadmin4-compose
+    container_name: pgadmin4-task
     image: dpage/pgadmin4
     restart: always
     environment:
@@ -28,8 +28,8 @@ services:
     depends_on:
       - postgres
     networks:
-      - postgres-compose-network
+      - postgres-task-network
 
 networks: 
-  postgres-compose-network:
+  postgres-task-network:
     driver: bridge
