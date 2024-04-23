@@ -1,4 +1,4 @@
-const odbc = require('odbc');
+import odbc from 'odbc';
 const connectString = 'Driver={PostgreSQL Unicode};Server=localhost;Port=5400;Database=empresa_db;Uid=taciano;Pwd=password;';
 
 async function main() {
