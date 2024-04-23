@@ -12,3 +12,45 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model funcionario {
+  codigo Int @id @default(autoincrement())
+  nome String?
+  sexo String?
+  dt_nasc DateTime
+  salario Float
+  supervisor Int?
+  depto Int?
+  @@map(name: "funcionario")
+}
+model departamento {
+  codigo Int @id @default(autoincrement())
+  nome String?
+  sigla String?
+  descricao String?
+  gerente Int?
+  @@map(name: "departamento")
+}
+model projeto {
+  codigo Int @id @default(autoincrement())
+  nome String?
+  descricao String?
+  responsavel Int?
+  depto Int?
+  data_inicio DateTime
+  data_fim DateTime
+  atividades  atividade[]
+
+@@map(name: "projeto")
+}
+model atividade {
+  codigo Int @id @default(autoincrement())
+  descricao String?
+  data_inicio DateTime
+  data_fim DateTime
+
+  projeto_id    projeto @relation(fields: [projeto], references: [codigo])
+  projeto Int
+
+  @@map(name: "atividade")
+}
