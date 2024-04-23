@@ -16,6 +16,10 @@ Para começar a usar o pacote odbc em um projeto TypeScript, você precisa insta
 Link da documentação da [ODBC.](https://www.npmjs.com/package/odbc?activeTab=readme)
 
 ## Iniciando projeto
+#### 0 - Entre na pasta ODBC
+```console
+cd tarefas/odbc
+```
 #### 1 - Baixando dependencia
 ```console
 npm i

@@ -13,6 +13,10 @@ Ecosistema e Comunidade: Prisma está rapidamente ganhando popularidade e tem um
 Link da documentação da [ORM Prisma.](https://www.prisma.io/)
 
 ## Iniciando Projeto
+#### 0 - Entre na pasta ODBC
+```console
+cd tarefas/orm
+```
 #### 1 - Baixando dependencia
 ```console
 npm i
