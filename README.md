@@ -23,5 +23,5 @@ Entre no [pgadmin](http://localhost:16543/browser/) e se conecte com banco empre
 [Scipts das tabelas e inserts](https://github.com/tacianosilva/bsi-tasks/tree/master/database/scripts/AtividadesBD/postgres)
 
 ### Entre na pasta [ODBC](tarefas/odbc/tarefa-odbc.md) para rodar o projeto da ODBC.
-### Entre na pasta [ORM](tarefas/odbc/tarefa-orm.md) para rodar o projeto da ORM.
+### Entre na pasta [ORM](tarefas/orm/tarefa-orm.md) para rodar o projeto da ORM.
 
