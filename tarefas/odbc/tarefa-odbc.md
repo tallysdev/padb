@@ -1,7 +1,6 @@
+# ODBC
 ## Scripts
 [Scipts Base do banco](https://github.com/tacianosilva/bsi-tasks/tree/master/database/scripts/AtividadesBD/postgres)
-
-[Script de Criação do banco com o pgadmin via docker](docker-compose.yml)
 
 [Index do app](index.ts)
 
@@ -15,3 +14,13 @@ Para começar a usar o pacote odbc em um projeto TypeScript, você precisa insta
 `yarn add odbc`
 
 Link da documentação da [ODBC.](https://www.npmjs.com/package/odbc?activeTab=readme)
+
+## Iniciando projeto
+#### 1 - Baixando dependencia
+```console
+npm i
+```
+#### 2 - Rodando o Projeto
+```console
+npm run dev
+```
